@@ -1,0 +1,44 @@
+/*=== btn style FF===*/
+
+.btn {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-black {
+  width: 190px;
+  height: 52px;
+  background-color: #231f20;
+  color: #fdfdfd;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 52px;
+
+  &:hover {
+    color: #fdfdfd;
+    opacity: 0.8;
+  }
+}
+
+.btn-transparent {
+  width: 190px;
+  height: 52px;
+  border: 1px solid #7b7373;
+  color: #231f20;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 50px;
+
+  &:hover {
+    border: 1px solid #231f20;
+    background-color: #231f20;
+    color: #fdfdfd;
+    opacity: 0.8;
+  }
+}
