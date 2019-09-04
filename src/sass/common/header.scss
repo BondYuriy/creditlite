@@ -1,0 +1,116 @@
+.header {
+  height: 74px;
+  background-color: rgba(249, 174, 0, 1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.header-box {
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .header-menu-box {
+      flex: 0 0 37px;
+
+      & .navigations {
+        & .navbar {
+          padding: 0;
+
+          & .navbar-nav {
+            & .nav-item {
+              & .nav-link {
+                font-size: 26px;
+                color: #4cb847;
+                padding-left: 10px;
+                padding-right: 10px;
+              }
+            }
+
+            & .nav-item-mobile {
+              margin-top: 50px;
+
+              & .phone a {
+                display: block;
+                font-size: 26px;
+                color: $gray-color;
+                padding-left: 10px;
+                padding-right: 10px;
+              }
+
+              & .languages {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+
+                & li {
+                  margin: 0;
+                  margin-right: 20px;
+
+                  &:last-child {
+                    margin-right: 0;
+                  }
+
+                  & a {
+                    margin: 0;
+                    font-size: 24px;
+                    color: $gray-color;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                  }
+                }
+
+                & .active a {
+                  color: #4cb847;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & .header-contact {
+        display: none;
+      }
+    }
+
+    & .logo {
+      margin-top: 14px;
+      margin-left: 30%;
+
+      & a {
+        display: block;
+        width: 180px;
+        height: 100%;
+
+        & img {
+          display: block;
+          width: 100%;
+          height: auto;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  & .user-options {
+    & .personal-area-box {
+      & .personal-area {
+        display: none;
+      }
+    }
+
+    & .languages {
+      display: none;
+    }
+  }
+}
