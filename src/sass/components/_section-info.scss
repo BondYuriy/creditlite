@@ -1,0 +1,45 @@
+.section-info {
+  & .section-info-img {
+    display: none;
+  }
+
+  & .section-info-list {
+    & .section-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 21px;
+
+      & .item-content-img {
+        flex: 0 0 65px;
+        margin-right: 42px;
+
+        & img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      & .item-content-info {
+        & span {
+          display: block;
+        }
+
+        & .title {
+          color: $green-color;
+          font-size: 25px;
+          font-weight: $Regular;
+          line-height: 20px;
+          text-transform: uppercase;
+        }
+
+        & .text {
+          color: $gray-color;
+          font-size: 18px;
+          font-weight: $Regular;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}

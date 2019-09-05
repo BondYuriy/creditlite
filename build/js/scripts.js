@@ -14,60 +14,30 @@ $(document).ready(function() {
 
   //=================================================
 
-  $(".home-carousel").owlCarousel({
-    loop: true,
-    margin: 0,
-    nav: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      1000: {
-        items: 1
+  $(function() {
+    $("#slider-price").slider({
+      value: 1500,
+      min: 500,
+      max: 5000,
+      step: 50,
+      slide: function(event, ui) {
+        $("#amount-price").val(ui.value);
       }
-    }
+    });
+    $("#amount-price").val($("#slider-price").slider("value"));
   });
 
-  $(".product-img-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    navText: [
-      "<span class='icon-arrow-left'>&#9001;</span>",
-      "<span class='icon-arrow-left'>&#9002;</span>"
-    ],
-    responsive: {
-      0: {
-        items: 1
-      },
-      500: {
-        items: 1
+  $(function() {
+    $("#slider-day").slider({
+      value: 20,
+      min: 3,
+      max: 30,
+      step: 1,
+      slide: function(event, ui) {
+        $("#amount-day").val(ui.value);
       }
-    }
-  });
-
-  $(".options-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    navText: [
-      "<span class='icon-arrow-left'>&#9001;</span>",
-      "<span class='icon-arrow-left'>&#9002;</span>"
-    ],
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      992: {
-        items: 3
-      },
-      1200: {
-        items: 4
-      }
-    }
+    });
+    $("#amount-day").val($("#slider-day").slider("value"));
   });
 
   //================================================
