@@ -1,5 +1,96 @@
 /* === heeader responsive === */
 
+@media (min-width: 1200px) {
+  .header {
+    height: 120px;
+  }
+
+  .header-box {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .header-main {
+      flex: 0 0 70%;
+      flex-direction: row-reverse;
+
+      & .header-menu-box {
+        flex: 0 0 60%;
+
+        & .navigations {
+          & .navbar {
+            padding: 0;
+
+            & .navbar-nav {
+              & .nav-item {
+                & .nav-link {
+                  font-size: 26px;
+                  color: #4cb847;
+                  font-weight: 700;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                }
+              }
+
+              & .nav-item-mobile {
+                display: none;
+              }
+            }
+          }
+        }
+
+        & .header-contact {
+          display: block;
+          color: $gray-color;
+          text-transform: uppercase;
+
+          & .phone {
+            margin-right: 10px;
+            padding-left: 10px;
+
+            & a {
+              font-size: 30px;
+              color: $gray-color;
+              font-weight: $Bold;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+
+      & .logo {
+        margin-top: 14px;
+        margin-right: 20px;
+
+        & a {
+          display: block;
+          width: 180px;
+          height: 100%;
+
+          & img {
+            display: block;
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    & .user-options {
+      display: flex;
+      align-items: center;
+
+      & .languages {
+        margin: 0;
+        display: flex;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .navbar-toggler {
     border: 0;
@@ -90,7 +181,10 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (min-width: 576px) {
+  .header-box .header-main .logo {
+    margin-left: 70%;
+  }
 }
 
 /* === footer responsive === */

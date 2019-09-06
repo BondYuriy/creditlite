@@ -66,8 +66,7 @@
             </div>
             <div class="user-options">
               <div class="personal-area-box">
-                <a class="personal-area" href="#">ЛИЧНЫЙ КАБИНЕТ</a>
-                <a class="personal-area-mobile" href="#">
+                <a class="personal-area-mobile" href="#" data-toggle="modal" data-target="#personal-area-modal">
                   <img src="img/Layer_7.png" alt="personal area icon">
                 </a>
               </div>
@@ -75,7 +74,7 @@
                 <li>
                   <a href="#">Рус</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="#">Укр</a>
                 </li>
               </ul>
@@ -116,7 +115,7 @@
               </div>
             </div>
             <div class="calculator-result">
-              <a class="link-promocode" href="#">я маю промокод</a>
+              <a class="link-promocode" data-toggle="modal" data-target="#promocode-modal">я маю промокод</a>
               <div class="calculator-result-info">
                 <div class="result-info-price">
                   <span class="name">Сума погашення</span>
@@ -425,6 +424,53 @@
     </div>
     <div class="footer"></div>
   </footer>
+
+  <div class="modal fade" id="personal-area-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Вхід</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="email-input">Адреса електронної пошти: *</label>
+            <input type="text" id="email-input" required="">
+            <label for="password-input">Ваш пароль: *</label>
+            <input type="text" id="password-input" required="">
+            <div class="btn-box">
+              <button class="btn btn-green-small" type="submit">Увійти в кабінет</button>
+              <a class="link-password" href="#">Забув (Забула) пароль</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="promocode-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Промокод </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <span class="error-input">ERROR PLACE</span>
+            <label for="promocode-input">Введіть промокод</label>
+            <input type="text" id="promocode-input" required="">
+            <span class="isvalid-code">Ваш код успішно прийнятий</span>
+            <button class="btn btn-green-small" type="submit">Перевірити код</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/jquery-ui-1.12.1.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
