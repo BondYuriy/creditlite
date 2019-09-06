@@ -47,15 +47,4 @@ $(document).ready(function() {
   });
 
   //=================================================
-
-  $(".select-toggle").click(function() {
-    $(this).toggleClass("open");
-  });
-
-  //=================================================
-
-  $(".btn-search-toggle").click(function() {
-    $(".search-toggle").toggleClass("open");
-    $(".close-form").toggleClass("show");
-  });
 });
