@@ -1,1 +1,31 @@
 /*=== footer ===*/
+
+.footer-mobile {
+  background-color: #3c3c3b;
+  padding: 12px;
+}
+
+.footer-contact {
+  color: $orange-color;
+  text-align: center;
+
+  & .phone {
+    display: block;
+
+    & a {
+      display: block;
+      color: #f9ae00;
+      font-size: 41px;
+      font-weight: $ExtraBold;
+      line-height: 42px;
+      text-transform: uppercase;
+    }
+  }
+
+  & .phone-info {
+    font-size: 23px;
+    font-weight: $Bold;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
