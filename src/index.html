@@ -99,6 +99,7 @@
               <div class="calculator-slider-info">
                 <label for="amount-price">Сума</label>
                 <input type="text" id="amount-price" readonly>
+                <p id="js-choice-price"></p>
                 <span>грн</span>
               </div>
               <div class="slider-scroll">
@@ -107,8 +108,9 @@
             </div>
             <div class="calculator-slider-day">
               <div class="calculator-slider-info">
-                <label for="amount-day">Сума</label>
+                <label for="amount-day">Строк</label>
                 <input type="text" id="amount-day" readonly>
+                <p id="js-choice-day"></p>
                 <span>днів</span>
               </div>
               <div class="slider-scroll">
@@ -120,11 +122,11 @@
               <div class="calculator-result-info">
                 <div class="result-info-price">
                   <span class="name">Сума погашення</span>
-                  <span class="value"><span>3888,75</span>грн</span>
+                  <span class="value"><span class="js-result-credit-price"></span> грн</span>
                 </div>
                 <div class="result-info-day">
                   <span class="name">Дата погашення</span>
-                  <span class="value">20.09.2019</span>
+                  <span class="value js-result-credit-day"></span>
                 </div>
               </div>
               <a class="btn btn-green" href="#">оформити кредит</a>
