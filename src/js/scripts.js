@@ -69,7 +69,7 @@ const promotionalPrice = document.querySelector(".js-promotional-result-price");
 let resultChoicePrice = 1500;
 let resultChoiceDay = 20;
 const creditRate = 1.75;
-const creditRatePromocode = 1;
+let creditRatePromocode = 1;
 let isValidPromocode = false;
 
 getDate(resultChoiceDay);
@@ -95,7 +95,7 @@ function getPrice() {
     const percent = creditRatePromocode * resultChoiceDay;
     const interestLoan = (resultChoicePrice / 100) * percent;
     const total = Number(resultChoicePrice) + interestLoan;
-    promotionalPrice.textContent = Math.floor(total * 100) / 100;
+    promotionalPrice.textContent = total.toFixed(2);
     promotionalPrice.style.display = "inline";
     resultCreditPrice.classList.add("not-active-price");
   }
@@ -103,7 +103,7 @@ function getPrice() {
   const percent = creditRate * resultChoiceDay;
   const interestLoan = (resultChoicePrice / 100) * percent;
   const total = Number(resultChoicePrice) + interestLoan;
-  resultCreditPrice.textContent = Math.floor(total * 100) / 100;
+  resultCreditPrice.textContent = total.toFixed(2);
 }
 
 function getDate(resultChoiceDay) {
@@ -141,12 +141,24 @@ function getPromocode(e) {
     getPrice();
   } else {
     msgPromocodeFalse.style.display = "inline-block";
+
+    setTimeout(function() {
+      closeModal();
+    }, 2000);
   }
+
+  setTimeout(function() {
+    cleansPromocodeModal();
+  }, 2000);
 }
 
-function isValidPromocodeInput(promocode) {
-  isValidPromocode = true;
-  // isValidPromocode = false;
+function isValidPromocodeInput() {
+  let n = /^[a-zA-Z0-9]{4,25}\b/;
+  if (userPromocodeInput.value.search(n) == 0) {
+    getDataPromocode();
+  } else {
+    isValidPromocode = false;
+  }
 }
 
 function cleansPromocodeModal() {
@@ -154,3 +166,10 @@ function cleansPromocodeModal() {
   msgPromocodeFalse.style.display = "none";
   userPromocodeInput.value = "";
 }
+
+function getDataPromocode() {
+  isValidPromocode = true;
+  // isValidPromocode = false;
+}
+
+function closeModal() {}
