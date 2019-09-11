@@ -122,7 +122,10 @@
               <div class="calculator-result-info">
                 <div class="result-info-price">
                   <span class="name">Сума погашення</span>
-                  <span class="value"><span class="js-result-credit-price"></span> грн</span>
+                  <span class="value">
+                    <span class="js-result-credit-price"></span>
+                    <span class="promotional-price js-promotional-result-price">1000</span>
+                    грн</span>
                 </div>
                 <div class="result-info-day">
                   <span class="name">Дата погашення</span>
@@ -460,17 +463,17 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Промокод </h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close js-promocode-modal-close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
           <form>
-            <span class="error-input">ERROR PLACE</span>
+            <span class="error-input js-isvalid-false">ERROR PLACE</span>
             <label for="promocode-input">Введіть промокод</label>
-            <input type="text" id="promocode-input" required>
-            <span class="isvalid-code">Ваш код успішно прийнятий</span>
-            <button class="btn btn-green-small" type="submit">Перевірити код</button>
+            <input type="text" id="promocode-input" required class="js-promocode-input">
+            <span class="isvalid-code js-isvalid-true">Ваш код успішно прийнятий</span>
+            <button class="btn btn-green-small js-promocode-submit" type="button">Перевірити код</button>
           </form>
         </div>
       </div>

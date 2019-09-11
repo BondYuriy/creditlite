@@ -7212,7 +7212,7 @@ button:focus {
 .calculator-content .calculator-result .calculator-result-info .result-info-price .name,
 .calculator-content .calculator-result .calculator-result-info .result-info-day .name {
 	color: #706f6f;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 700;
 	line-height: 22px;
 }
@@ -7220,9 +7220,25 @@ button:focus {
 .calculator-content .calculator-result .calculator-result-info .result-info-price .value,
 .calculator-content .calculator-result .calculator-result-info .result-info-day .value {
 	color: #706f6f;
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 800;
 	line-height: 22px;
+}
+
+.calculator-content .calculator-result .calculator-result-info .result-info-price .promotional-price,
+.calculator-content .calculator-result .calculator-result-info .result-info-day .promotional-price {
+	display: none;
+	color: #52ae32;
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 22px;
+	margin-left: 10px;
+}
+
+.calculator-content .calculator-result .calculator-result-info .result-info-price .not-active-price,
+.calculator-content .calculator-result .calculator-result-info .result-info-day .not-active-price {
+	color: #de180f;
+	text-decoration: line-through;
 }
 
 .calculator-content .calculator-result .calculator-result-info .result-info-price {
@@ -7414,7 +7430,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .modal-content .modal-body form .error-input {
-	display: inline-block;
+	display: none;
 	color: #fff;
 	border-radius: 8px;
 	padding: 6px 10px;
@@ -7423,7 +7439,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .modal-content .modal-body form .isvalid-code {
-	display: block;
+	display: none;
 	color: #52ae32;
 	font-weight: bold;
 	margin: 10px 0;

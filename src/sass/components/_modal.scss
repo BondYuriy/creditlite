@@ -21,7 +21,7 @@
   & .modal-body {
     & form {
       & .error-input {
-        display: inline-block;
+        display: none;
         color: $white;
         border-radius: 8px;
         padding: 6px 10px;
@@ -30,7 +30,7 @@
       }
 
       & .isvalid-code {
-        display: block;
+        display: none;
         color: $green-color;
         font-weight: $Bold;
         margin: 10px 0;

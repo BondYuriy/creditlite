@@ -148,16 +148,30 @@
 
       & .name {
         color: #706f6f;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         line-height: 22px;
       }
 
       & .value {
         color: #706f6f;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 800;
         line-height: 22px;
+      }
+
+      & .promotional-price {
+        display: none;
+        color: $green-color;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 22px;
+        margin-left: 10px;
+      }
+
+      & .not-active-price {
+        color: #de180f;
+        text-decoration: line-through;
       }
     }
 

@@ -57,12 +57,26 @@ const userInputPrice = document.querySelector("#js-choice-price").textContent;
 const userInputDay = document.querySelector("#js-choice-day").textContent;
 const resultCreditPrice = document.querySelector(".js-result-credit-price");
 const resultCreditDay = document.querySelector(".js-result-credit-day");
+const userPromocodeInput = document.querySelector(".js-promocode-input");
+const userPromocodeBtn = document.querySelector(".js-promocode-submit");
+const msgPromocodeTrue = document.querySelector(".js-isvalid-true");
+const msgPromocodeFalse = document.querySelector(".js-isvalid-false");
+const btnPromocodeModalClose = document.querySelector(
+  ".js-promocode-modal-close"
+);
+const promotionalPrice = document.querySelector(".js-promotional-result-price");
+
 let resultChoicePrice = 1500;
 let resultChoiceDay = 20;
 const creditRate = 1.75;
+const creditRatePromocode = 1;
+let isValidPromocode = false;
 
 getDate(resultChoiceDay);
 getPrice();
+
+userPromocodeBtn.addEventListener("click", getPromocode);
+btnPromocodeModalClose.addEventListener("click", cleansPromocodeModal);
 
 function getChoicePrice() {
   const userInputPrice = document.querySelector("#js-choice-price").textContent;
@@ -77,6 +91,15 @@ function getChoiceDay() {
 }
 
 function getPrice() {
+  if (isValidPromocode) {
+    const percent = creditRatePromocode * resultChoiceDay;
+    const interestLoan = (resultChoicePrice / 100) * percent;
+    const total = Number(resultChoicePrice) + interestLoan;
+    promotionalPrice.textContent = Math.floor(total * 100) / 100;
+    promotionalPrice.style.display = "inline";
+    resultCreditPrice.classList.add("not-active-price");
+  }
+
   const percent = creditRate * resultChoiceDay;
   const interestLoan = (resultChoicePrice / 100) * percent;
   const total = Number(resultChoicePrice) + interestLoan;
@@ -85,16 +108,16 @@ function getPrice() {
 
 function getDate(resultChoiceDay) {
   getPrice();
-  var dayMs = 86400000;
+  const dayMs = 86400000;
   let resultData = resultChoiceDay * dayMs;
 
-  var time = Date.now();
-  var validData = time + resultData;
+  const time = Date.now();
+  const validData = time + resultData;
 
-  var date = new Date(validData);
-  var year = date.getFullYear();
-  var month = date.getMonth() + 1;
-  var day = date.getDate();
+  const date = new Date(validData);
+  const year = date.getFullYear();
+  let month = date.getMonth() + 1;
+  let day = date.getDate();
 
   if (month < 10) {
     month = "0" + month;
@@ -104,7 +127,30 @@ function getDate(resultChoiceDay) {
     day = "0" + day;
   }
 
-  var setData = `${day}.${month}.${year}`;
+  const setData = `${day}.${month}.${year}`;
 
   resultCreditDay.textContent = setData;
+}
+
+function getPromocode(e) {
+  const resultPromocodeInput = userPromocodeInput.value;
+
+  isValidPromocodeInput(resultPromocodeInput);
+  if (isValidPromocode) {
+    msgPromocodeTrue.style.display = "block";
+    getPrice();
+  } else {
+    msgPromocodeFalse.style.display = "inline-block";
+  }
+}
+
+function isValidPromocodeInput(promocode) {
+  isValidPromocode = true;
+  // isValidPromocode = false;
+}
+
+function cleansPromocodeModal() {
+  msgPromocodeTrue.style.display = "none";
+  msgPromocodeFalse.style.display = "none";
+  userPromocodeInput.value = "";
 }
