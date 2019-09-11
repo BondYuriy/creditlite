@@ -29,3 +29,38 @@
     text-transform: uppercase;
   }
 }
+
+.footer {
+  display: none;
+  padding: 60px 0;
+  background-color: #4cb847;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+
+  & .logo {
+    flex: 0 0 180px;
+    margin: 0;
+  }
+
+  & .footer-nav-box {
+    flex: 0 0 70%;
+    display: flex;
+    justify-content: space-between;
+
+    & .footer-nav {
+      & h3 {
+        font-size: 24px;
+        color: $white-text;
+        font-weight: $Bold;
+        margin-bottom: 15px;
+      }
+
+      & ul li a {
+        color: $white-text;
+      }
+    }
+  }
+}

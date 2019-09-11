@@ -139,12 +139,11 @@ function getPromocode(e) {
   if (isValidPromocode) {
     msgPromocodeTrue.style.display = "block";
     getPrice();
+    setTimeout(function() {
+      btnPromocodeModalClose.click();
+    }, 1000);
   } else {
     msgPromocodeFalse.style.display = "inline-block";
-
-    setTimeout(function() {
-      closeModal();
-    }, 2000);
   }
 
   setTimeout(function() {
@@ -171,5 +170,3 @@ function getDataPromocode() {
   isValidPromocode = true;
   // isValidPromocode = false;
 }
-
-function closeModal() {}

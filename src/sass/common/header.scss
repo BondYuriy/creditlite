@@ -57,24 +57,6 @@
         display: none;
       }
     }
-
-    & .logo {
-      margin-top: 14px;
-      margin-left: 30%;
-
-      & a {
-        display: block;
-        width: 180px;
-        height: 100%;
-
-        & img {
-          display: block;
-          width: 100%;
-          height: auto;
-          cursor: pointer;
-        }
-      }
-    }
   }
 
   & .user-options {
