@@ -6762,6 +6762,10 @@ a.text-dark:focus {
 	margin-top: 90px;
 }
 
+.mt-140 {
+	margin-top: 140px;
+}
+
 /*------- margin-bottom ---------*/
 
 .mb-20 {
@@ -10841,6 +10845,19 @@ body.sticky-header .header-box .header-main .header-menu-box .header-contact .ph
 	border-radius: 14px;
 	background-color: #fff;
 	margin: 0 0 30px auto;
+}
+
+.calculator-modal-style {
+	padding: 0;
+	margin: 0;
+	height: auto;
+}
+
+.calculator-modal-style .calculator-slider-price,
+.calculator-modal-style .calculator-slider-day,
+.calculator-modal-style .calculator-result {
+	width: 100%;
+	padding: 0;
 }
 
 .section-info {

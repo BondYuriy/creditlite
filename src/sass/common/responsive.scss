@@ -280,6 +280,19 @@
       margin: 0 0 30px auto;
     }
   }
+
+  .calculator-modal-style {
+    padding: 0;
+    margin: 0;
+    height: auto;
+
+    & .calculator-slider-price,
+    .calculator-slider-day,
+    .calculator-result {
+      width: 100%;
+      padding: 0;
+    }
+  }
 }
 
 /* === section-info === */
