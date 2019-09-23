@@ -60,17 +60,12 @@
         text-align: center;
         margin: 0 10px 5px 0;
         color: $orange-color;
-        font-size: 34px;
+        font-size: 30px;
         font-weight: 900;
-        line-height: 36px;
         text-transform: uppercase;
         background-color: rgba(0, 0, 0, 0.05);
         box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
-        text-size-adjust: 200%;
-        font-size: 28px;
-        -moz-text-size-adjust: 200%;
-        -webkit-text-size-adjust: 200%;
-        -ms-text-size-adjust: 200%;
+        line-height: normal;
 
         &:focus {
           outline: none;
