@@ -58,13 +58,8 @@
         margin-bottom: 15px;
       }
 
-      & ul {
-        display: flex;
-
-        & li a {
-          padding: 0 10px;
-          color: $white-text;
-        }
+      & ul li a {
+        color: $white-text;
       }
     }
   }

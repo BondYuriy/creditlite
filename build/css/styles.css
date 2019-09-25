@@ -7069,12 +7069,7 @@ button:focus {
 	margin-bottom: 15px;
 }
 
-.footer-box .footer-nav-box .footer-nav ul {
-	display: flex;
-}
-
 .footer-box .footer-nav-box .footer-nav ul li a {
-	padding: 0 10px;
 	color: #fff;
 }
 
@@ -7564,6 +7559,19 @@ button:focus {
 	font-size: 25px;
 	font-weight: 500;
 	line-height: 26px;
+	white-space: normal;
+}
+
+.about-us {
+	padding: 150px 0 50px 0;
+}
+
+.about-us h1 {
+	color: #706f6f;
+	font-size: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 30px;
 }
 
 /* === heeader responsive === */
@@ -7575,6 +7583,8 @@ button:focus {
 /* === section-info === */
 
 /* === footer === */
+
+/* === questions === */
 
 @media screen and (prefers-reduced-motion: reduce) {
 
@@ -10996,6 +11006,14 @@ body.sticky-header .header-box .header-main .header-menu-box .header-contact .ph
 .navbar-expand-xl > .container-fluid {
 	padding-right: 0;
 	padding-left: 0;
+}
+
+}
+
+@media (max-width: 1199px) {
+
+.questions h1 {
+	text-align: center;
 }
 
 }

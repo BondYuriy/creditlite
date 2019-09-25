@@ -376,3 +376,11 @@
     display: block;
   }
 }
+
+/* === questions === */
+
+@media (max-width: 1199px) {
+  .questions h1 {
+    text-align: center;
+  }
+}
