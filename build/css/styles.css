@@ -7069,7 +7069,12 @@ button:focus {
 	margin-bottom: 15px;
 }
 
+.footer-box .footer-nav-box .footer-nav ul {
+	display: flex;
+}
+
 .footer-box .footer-nav-box .footer-nav ul li a {
+	padding: 0 10px;
 	color: #fff;
 }
 
@@ -7523,6 +7528,43 @@ button:focus {
 }
 
 /*=== home page ===*/
+
+.questions {
+	padding: 150px 0 50px 0;
+}
+
+.questions h1 {
+	color: #706f6f;
+	font-size: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.questions .accordion {
+	margin-bottom: 70px;
+}
+
+.questions .accordion .card {
+	border: 0;
+	margin-bottom: 15px;
+}
+
+.questions .accordion .card:hover {
+	box-shadow: 0px 4px 10px rgba(135, 135, 135, 0.16) !important;
+}
+
+.questions .accordion .card .card-header {
+	border: 0;
+	background-color: #fff;
+}
+
+.questions .accordion .card .card-header .btn {
+	color: #52ae32;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 26px;
+}
 
 /* === heeader responsive === */
 
