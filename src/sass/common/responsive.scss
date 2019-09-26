@@ -404,16 +404,20 @@
 /* === about-us === */
 
 @media (min-width: 1200px) {
-  .to-issue {
+  .to-pay {
     text-align: left;
 
-    & .to-issue-list {
+    & .to-pay-list {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
 
       & li {
         flex: 0 0 45%;
+
+        &:last-child {
+          flex: 0 0 100%;
+        }
 
         & span {
           justify-content: flex-start;
@@ -422,3 +426,5 @@
     }
   }
 }
+
+/* === about-us === */

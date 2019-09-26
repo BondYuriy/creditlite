@@ -7685,6 +7685,63 @@ button:focus {
 	color: #ffad00;
 }
 
+.to-pay {
+	padding: 150px 0 50px 0;
+	text-align: center;
+}
+
+.to-pay h1 {
+	color: #706f6f;
+	font-size: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.to-pay .to-pay-list {
+	margin-bottom: 20px;
+}
+
+.to-pay .to-pay-list li {
+	margin-bottom: 50px;
+}
+
+.to-pay .to-pay-list li span {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+.to-pay .to-pay-list li span img {
+	height: auto;
+}
+
+.to-pay .to-pay-list li h3 {
+	color: #52ae32;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.to-pay .to-pay-list li h4 {
+	margin: 0;
+	color: #706f6f;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	line-height: 20px;
+}
+
+.to-pay .to-pay-list li p strong {
+	color: #ffad00;
+}
+
 /* === heeader responsive === */
 
 /* === article === */
@@ -7696,6 +7753,8 @@ button:focus {
 /* === footer === */
 
 /* === questions === */
+
+/* === about-us === */
 
 /* === about-us === */
 
@@ -11111,21 +11170,25 @@ body.sticky-header .header-box .header-main .header-menu-box .header-contact .ph
 	flex-wrap: wrap;
 }
 
-.to-issue {
+.to-pay {
 	text-align: left;
 }
 
-.to-issue .to-issue-list {
+.to-pay .to-pay-list {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-.to-issue .to-issue-list li {
+.to-pay .to-pay-list li {
 	flex: 0 0 45%;
 }
 
-.to-issue .to-issue-list li span {
+.to-pay .to-pay-list li:last-child {
+	flex: 0 0 100%;
+}
+
+.to-pay .to-pay-list li span {
 	justify-content: flex-start;
 }
 

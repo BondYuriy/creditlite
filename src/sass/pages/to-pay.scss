@@ -1,0 +1,56 @@
+.to-pay {
+  padding: 150px 0 50px 0;
+  text-align: center;
+
+  & h1 {
+    color: #706f6f;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  & .to-pay-list {
+    margin-bottom: 20px;
+
+    & li {
+      margin-bottom: 50px;
+
+      & span {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        margin-bottom: 20px;
+
+        img {
+          height: auto;
+        }
+      }
+
+      & h3 {
+        color: #52ae32;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+        text-transform: uppercase;
+      }
+
+      & h4 {
+        margin: 0;
+        color: #706f6f;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        line-height: 20px;
+      }
+
+      & p strong {
+        color: $orange-color;
+      }
+    }
+  }
+}
