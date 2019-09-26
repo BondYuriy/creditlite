@@ -7756,9 +7756,9 @@ button:focus {
 
 /* === about-us === */
 
-/* === about-us === */
+/* === to-pay === */
 
-/* === about-us === */
+/* === to-issue === */
 
 @media screen and (prefers-reduced-motion: reduce) {
 
@@ -10936,7 +10936,7 @@ body.sticky-header .header-box .header-main .header-menu-box .header-contact .ph
 }
 
 .header-box .header-main {
-	flex: 0 0 70%;
+	flex: 0 0 73%;
 	flex-direction: row-reverse;
 }
 
@@ -11170,6 +11170,14 @@ body.sticky-header .header-box .header-main .header-menu-box .header-contact .ph
 	flex-wrap: wrap;
 }
 
+.about-us .about-us-content-list li {
+	flex: 0 0 45%;
+}
+
+.about-us .about-us-content-list li span {
+	justify-content: flex-start;
+}
+
 .to-pay {
 	text-align: left;
 }
@@ -11189,6 +11197,24 @@ body.sticky-header .header-box .header-main .header-menu-box .header-contact .ph
 }
 
 .to-pay .to-pay-list li span {
+	justify-content: flex-start;
+}
+
+.to-issue {
+	text-align: left;
+}
+
+.to-issue .to-issue-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.to-issue .to-issue-list li {
+	flex: 0 0 45%;
+}
+
+.to-issue .to-issue-list li span {
 	justify-content: flex-start;
 }
 

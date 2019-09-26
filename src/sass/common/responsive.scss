@@ -33,7 +33,7 @@
     align-items: center;
 
     & .header-main {
-      flex: 0 0 70%;
+      flex: 0 0 73%;
       flex-direction: row-reverse;
 
       & .header-menu-box {
@@ -397,11 +397,19 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+
+      & li {
+        flex: 0 0 45%;
+
+        & span {
+          justify-content: flex-start;
+        }
+      }
     }
   }
 }
 
-/* === about-us === */
+/* === to-pay === */
 
 @media (min-width: 1200px) {
   .to-pay {
@@ -427,4 +435,24 @@
   }
 }
 
-/* === about-us === */
+/* === to-issue === */
+
+@media (min-width: 1200px) {
+  .to-issue {
+    text-align: left;
+
+    & .to-issue-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      & li {
+        flex: 0 0 45%;
+
+        & span {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
