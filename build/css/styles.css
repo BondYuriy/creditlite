@@ -7572,6 +7572,7 @@ button:focus {
 	font-weight: 800;
 	text-transform: uppercase;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 .about-us .about-us-content {
@@ -7587,9 +7588,6 @@ button:focus {
 }
 
 .about-us .about-us-content-list {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
 	margin-bottom: 50px;
 }
 
@@ -7641,6 +7639,52 @@ button:focus {
 	text-transform: uppercase;
 }
 
+.to-issue {
+	padding: 150px 0 50px 0;
+	text-align: center;
+}
+
+.to-issue h1 {
+	color: #706f6f;
+	font-size: 32px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.to-issue .to-issue-list {
+	margin-bottom: 20px;
+}
+
+.to-issue .to-issue-list li {
+	margin-bottom: 50px;
+}
+
+.to-issue .to-issue-list li span {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+.to-issue .to-issue-list li span img {
+	height: auto;
+}
+
+.to-issue .to-issue-list li h3 {
+	color: #52ae32;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.to-issue .to-issue-list li p strong {
+	color: #ffad00;
+}
+
 /* === heeader responsive === */
 
 /* === article === */
@@ -7652,6 +7696,10 @@ button:focus {
 /* === footer === */
 
 /* === questions === */
+
+/* === about-us === */
+
+/* === about-us === */
 
 @media screen and (prefers-reduced-motion: reduce) {
 
@@ -11051,6 +11099,34 @@ body.sticky-header .header-box .header-main .header-menu-box .header-contact .ph
 
 .footer {
 	display: block;
+}
+
+.about-us h1 {
+	text-align: left;
+}
+
+.about-us .about-us-content-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.to-issue {
+	text-align: left;
+}
+
+.to-issue .to-issue-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.to-issue .to-issue-list li {
+	flex: 0 0 45%;
+}
+
+.to-issue .to-issue-list li span {
+	justify-content: flex-start;
 }
 
 }

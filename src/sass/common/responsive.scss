@@ -384,3 +384,41 @@
     text-align: center;
   }
 }
+
+/* === about-us === */
+
+@media (min-width: 1200px) {
+  .about-us {
+    & h1 {
+      text-align: left;
+    }
+
+    & .about-us-content-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+/* === about-us === */
+
+@media (min-width: 1200px) {
+  .to-issue {
+    text-align: left;
+
+    & .to-issue-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      & li {
+        flex: 0 0 45%;
+
+        & span {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
