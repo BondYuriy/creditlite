@@ -8,4 +8,71 @@
     text-transform: uppercase;
     margin-bottom: 30px;
   }
+
+  & .about-us-content {
+    margin-bottom: 70px;
+
+    & h2 {
+      color: #52ae32;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+
+  & .about-us-content-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    & li {
+      flex: 0 0 48%;
+      margin-bottom: 30px;
+
+      & h3 {
+        color: #52ae32;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+        text-transform: uppercase;
+      }
+
+      & h4 {
+        margin: 0;
+        color: #706f6f;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        line-height: 20px;
+      }
+
+      & a {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        color: #231f20;
+        text-decoration: underline;
+
+        &:hover {
+          color: $orange-color;
+        }
+      }
+    }
+  }
+
+  & .about-us-contact {
+    margin-bottom: 50px;
+
+    & h2 {
+      color: #52ae32;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
 }

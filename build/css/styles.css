@@ -7574,6 +7574,73 @@ button:focus {
 	margin-bottom: 30px;
 }
 
+.about-us .about-us-content {
+	margin-bottom: 70px;
+}
+
+.about-us .about-us-content h2 {
+	color: #52ae32;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.about-us .about-us-content-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.about-us .about-us-content-list li {
+	flex: 0 0 48%;
+	margin-bottom: 30px;
+}
+
+.about-us .about-us-content-list li h3 {
+	color: #52ae32;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.about-us .about-us-content-list li h4 {
+	margin: 0;
+	color: #706f6f;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	line-height: 20px;
+}
+
+.about-us .about-us-content-list li a {
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	color: #231f20;
+	text-decoration: underline;
+}
+
+.about-us .about-us-content-list li a:hover {
+	color: #ffad00;
+}
+
+.about-us .about-us-contact {
+	margin-bottom: 50px;
+}
+
+.about-us .about-us-contact h2 {
+	color: #52ae32;
+	font-size: 25px;
+	font-weight: 500;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
 /* === heeader responsive === */
 
 /* === article === */
