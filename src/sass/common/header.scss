@@ -37,17 +37,14 @@
               }
             }
 
-            & .nav-item-mobile {
+            & .nav-item-mobile a {
+              display: block;
+              font-size: 26px;
+              color: $gray-color;
+              font-weight: 700;
+              padding-left: 10px;
+              padding-right: 10px;
               margin-top: 50px;
-
-              & .phone a {
-                display: block;
-                font-size: 26px;
-                color: $gray-color;
-                font-weight: 700;
-                padding-left: 10px;
-                padding-right: 10px;
-              }
             }
           }
         }

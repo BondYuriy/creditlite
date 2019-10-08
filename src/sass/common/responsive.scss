@@ -54,9 +54,15 @@
                 }
               }
 
-              & .nav-item-mobile {
-                display: none;
+              & .languages {
+                position: absolute;
+                right: -300px;
+                top: -27px;
               }
+            }
+
+            & .nav-item-mobile {
+              display: none;
             }
           }
         }
@@ -103,6 +109,7 @@
     & .user-options {
       display: flex;
       align-items: center;
+      padding-right: 150px;
 
       & .languages {
         margin: 0;
