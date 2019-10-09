@@ -7534,10 +7534,37 @@ button:focus {
 	border-bottom: 1px solid #000;
 }
 
+.breadcrumb {
+	padding: 0;
+	padding-top: 140px;
+	background-color: #fff;
+}
+
+.breadcrumb li,
+.breadcrumb li a {
+	font-size: 16px;
+}
+
+.breadcrumb li a {
+	color: #706f6f;
+	font-weight: 700;
+}
+
+.breadcrumb li a:hover {
+	color: #52ae32;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+	display: inline-block;
+	padding-right: 0.5rem;
+	color: #6c757d;
+	content: "|";
+}
+
 /*=== home page ===*/
 
 .questions {
-	padding: 150px 0 50px 0;
+	padding: 20px 0 50px 0;
 }
 
 .questions h1 {
@@ -7575,7 +7602,7 @@ button:focus {
 }
 
 .about-us {
-	padding: 150px 0 50px 0;
+	padding: 20px 0 50px 0;
 }
 
 .about-us h1 {
@@ -7652,7 +7679,7 @@ button:focus {
 }
 
 .to-issue {
-	padding: 150px 0 50px 0;
+	padding: 20px 0 50px 0;
 	text-align: center;
 }
 
@@ -7698,7 +7725,7 @@ button:focus {
 }
 
 .to-pay {
-	padding: 150px 0 50px 0;
+	padding: 20px 0 50px 0;
 	text-align: center;
 }
 

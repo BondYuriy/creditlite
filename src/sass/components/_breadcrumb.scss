@@ -1,0 +1,26 @@
+.breadcrumb {
+  padding: 0;
+  padding-top: 140px;
+  background-color: #fff;
+
+  & li,
+  li a {
+    font-size: 16px;
+  }
+
+  & li a {
+    color: #706f6f;
+    font-weight: 700;
+
+    &:hover {
+      color: $green-color;
+    }
+  }
+
+  & .breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "|";
+  }
+}
