@@ -7558,7 +7558,7 @@ button:focus {
 	display: inline-block;
 	padding-right: 0.5rem;
 	color: #6c757d;
-	content: "|";
+	content: ">";
 }
 
 /*=== home page ===*/
@@ -10988,7 +10988,7 @@ body.sticky-header .header-box .header-main .header-menu-box .header-contact .ph
 }
 
 .header-box .header-main .header-menu-box .navigations .navbar .navbar-nav .nav-item .nav-link {
-	font-size: 26px;
+	font-size: 25px;
 	color: #4cb847;
 	font-weight: 700;
 	padding-left: 10px;
