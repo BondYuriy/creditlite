@@ -89,6 +89,54 @@
           </nav>
         </div>
       </div>
+      <div class="row mb-30 mt-30">
+        <div class="col-12">
+          <div class="calculator-content sub-calculator">
+            <div class="calculator-count">
+              <div class="calculator-slider-price">
+                <div class="calculator-slider-info">
+                  <label for="amount-price">Сума</label>
+                  <input type="text" id="amount-price" readonly>
+                  <p id="js-choice-price"></p>
+                  <span>грн</span>
+                </div>
+                <div class="slider-scroll">
+                  <div id="slider-price"></div>
+                </div>
+              </div>
+              <div class="calculator-slider-day">
+                <div class="calculator-slider-info">
+                  <label for="amount-day">Строк</label>
+                  <input type="text" id="amount-day" readonly>
+                  <p id="js-choice-day"></p>
+                  <span>днів</span>
+                </div>
+                <div class="slider-scroll">
+                  <div id="slider-day"></div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator-result">
+              <a class="link-promocode" data-toggle="modal" data-target="#promocode-modal">я маю промокод</a>
+              <div class="calculator-result-info">
+                <div class="result-info-price">
+                  <span class="name">Сума погашення</span>
+                  <span class="value">
+                    <span class="js-result-credit-price"></span>
+                    <span class="promotional-price js-promotional-result-price">1000</span>
+                    грн</span>
+                </div>
+                <div class="result-info-day">
+                  <span class="name">Дата погашення</span>
+                  <span class="value js-result-credit-day"></span>
+                </div>
+              </div>
+              <a class="btn btn-green" href="#" data-toggle="modal" data-target="#calculator-modal">оформити
+                кредит</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-12">
           <div class="to-issue">
@@ -136,7 +184,7 @@
                   пізніше - це залежить від регламенту роботи банку, в якому була відкрита карта</p>
               </li>
             </ul>
-            <a class="btn btn-green" href="#" data-toggle="modal" data-target="#calculator-modal">оформити кредит</a>
+            <a class="btn btn-green" href="#" data-toggle="modal" data-target="#personal-area-modal">оформити кредит</a>
           </div>
         </div>
       </div>
@@ -260,62 +308,6 @@
     </div>
   </div>
 
-  <div class="modal fade" id="calculator-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Розрахувати кредит</h5>
-          <button type="button" class="close js-promocode-modal-close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="calculator-content calculator-modal-style">
-            <div class="calculator-slider-price">
-              <div class="calculator-slider-info">
-                <label for="amount-price">Сума</label>
-                <input type="text" id="amount-price" readonly>
-                <p id="js-choice-price"></p>
-                <span>грн</span>
-              </div>
-              <div class="slider-scroll">
-                <div id="slider-price"></div>
-              </div>
-            </div>
-            <div class="calculator-slider-day">
-              <div class="calculator-slider-info">
-                <label for="amount-day">Строк</label>
-                <input type="text" id="amount-day" readonly>
-                <p id="js-choice-day"></p>
-                <span>днів</span>
-              </div>
-              <div class="slider-scroll">
-                <div id="slider-day"></div>
-              </div>
-            </div>
-            <div class="calculator-result">
-              <a class="link-promocode" data-toggle="modal" data-target="#promocode-modal">я маю промокод</a>
-              <div class="calculator-result-info">
-                <div class="result-info-price">
-                  <span class="name">Сума погашення</span>
-                  <span class="value">
-                    <span class="js-result-credit-price"></span>
-                    <span class="promotional-price js-promotional-result-price">1000</span>
-                    грн</span>
-                </div>
-                <div class="result-info-day">
-                  <span class="name">Дата погашення</span>
-                  <span class="value js-result-credit-day"></span>
-                </div>
-              </div>
-              <a class="btn btn-green" href="#" data-toggle="modal" data-target="#calculator-modal">оформити кредит</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="js/jquery-ui-1.12.1.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
