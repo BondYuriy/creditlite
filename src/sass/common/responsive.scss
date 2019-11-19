@@ -227,6 +227,16 @@
   }
 }
 
+/* === breadcrumb === */
+
+@media (max-width: 1199px) {
+  .breadcrumb {
+    padding: 0;
+    padding-top: 100px;
+    background-color: #fff;
+  }
+}
+
 /* === calculator-box === */
 
 @media (min-width: 1200px) {
@@ -305,6 +315,48 @@
     .calculator-result {
       width: 100%;
       padding: 0;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .sub-calculator {
+    & .calculator-count {
+      padding: 15px;
+
+      & .calculator-slider-price {
+        margin-bottom: 50px;
+      }
+    }
+
+    & .calculator-result {
+      padding: 15px;
+
+      & .calculator-result-info {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sub-calculator {
+    display: block;
+
+    & .calculator-count {
+      border-right: 0;
+    }
+
+    & .calculator-result {
+      & .calculator-result-info .result-info-price .name,
+      .calculator-result-info .result-info-day .name {
+        font-size: 16px;
+      }
+
+      & .btn-green {
+        width: 260px;
+        font-size: 24px;
+      }
     }
   }
 }

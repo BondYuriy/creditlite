@@ -7311,7 +7311,7 @@ button:focus {
 }
 
 .sub-calculator .calculator-count {
-	flex: 0 0 49%;
+	flex: 0 0 50%;
 	border-right: 1px solid #e5e5e5;
 }
 
@@ -7813,6 +7813,8 @@ button:focus {
 /* === heeader responsive === */
 
 /* === article === */
+
+/* === breadcrumb === */
 
 /* === calculator-box === */
 
@@ -11326,6 +11328,28 @@ body.sticky-header .header-box .header-main .header-menu-box .header-contact .ph
 
 @media (max-width: 1199px) {
 
+.breadcrumb {
+	padding: 0;
+	padding-top: 100px;
+	background-color: #fff;
+}
+
+.sub-calculator .calculator-count {
+	padding: 15px;
+}
+
+.sub-calculator .calculator-count .calculator-slider-price {
+	margin-bottom: 50px;
+}
+
+.sub-calculator .calculator-result {
+	padding: 15px;
+}
+
+.sub-calculator .calculator-result .calculator-result-info {
+	margin-bottom: 20px;
+}
+
 .questions h1 {
 	text-align: center;
 }
@@ -11462,6 +11486,28 @@ body.sticky-header .header {
 .navbar-expand-md > .container-fluid {
 	padding-right: 0;
 	padding-left: 0;
+}
+
+}
+
+@media (max-width: 767px) {
+
+.sub-calculator {
+	display: block;
+}
+
+.sub-calculator .calculator-count {
+	border-right: 0;
+}
+
+.sub-calculator .calculator-result .calculator-result-info .result-info-price .name,
+.sub-calculator .calculator-result .calculator-result-info .result-info-day .name {
+	font-size: 16px;
+}
+
+.sub-calculator .calculator-result .btn-green {
+	width: 260px;
+	font-size: 24px;
 }
 
 }
